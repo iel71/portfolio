@@ -49,18 +49,34 @@ video {
 
 .header h1 {
   color: #d3ae87;
-  font-size: 3rem !important;
+  font-size: 3rem;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-@media (max-width: 900px) {
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .header {
     left: 50%;
   }
 
   .header h1 {
-    font-size: 34px !important;
-    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    margin-left: 40px;
+    transform: none;
+    left: 0;
+    top: 40%;
+    line-height: 2rem;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
   }
 }
 
